@@ -48,7 +48,7 @@ func ProcessWeChatMessage(req *WeChatMessageRequest, res *WeChatMessageResponse)
         SetAuthToken(apiKey).
         SetHeader("Content-Type", "application/json").
         SetBody(map[string]interface{}{
-            "model":      "gpt-3.5-turbo",
+            "model":      "ERNIE-Bot",
             "messages":   []interface{}{map[string]interface{}{"role": "system", "content": req.Content}},
             "max_tokens": 50,
         }).
